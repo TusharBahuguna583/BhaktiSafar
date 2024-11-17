@@ -56,7 +56,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6">
+    <div id="contactus" className="w-3/5 mx-auto mb-1 p-6">
+      <p className="w-full text-center text-[400%] font-bold text-gray-600 ">
+        Get In Touch.
+      </p>
       <form ref={form} onSubmit={sendEmail} className="space-y-4">
         <div>
           <label htmlFor="user_name" className="block text-gray-700">
@@ -87,7 +90,7 @@ const Contact = () => {
             Mobile Number
           </label>
           <input
-            type="number"
+            type="tel"
             name="user_mobile"
             id="user_mobile"
             className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
@@ -101,7 +104,7 @@ const Contact = () => {
           <textarea
             name="message"
             id="message"
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500 resize-y"
+            className="w-full min-h-32 p-2 border text-xs border-gray-300 rounded-md focus:outline-none focus:border-green-500 resize-none"
             rows="4"
           ></textarea>
         </div>

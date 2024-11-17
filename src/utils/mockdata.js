@@ -7,7 +7,7 @@ const cardInfo = [
   },
   {
     title: "Rani Sati Package",
-    image: images["rishikesh.jpg"],
+    image: images["rani-sati.jpg"],
   },
   {
     title: "Rishikesh-Devprayag",
@@ -15,7 +15,7 @@ const cardInfo = [
   },
   {
     title: "Mathura-Vrindavan",
-    image: "https://picsum.photos/500",
+    image: images["mathura-vrindavan.jpg"],
   },
 ];
 
