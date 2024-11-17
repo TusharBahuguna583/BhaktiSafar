@@ -40,7 +40,7 @@ function CarouselContainer() {
 
     // Clear interval on component unmount or when auto-scroll is disabled
     return () => clearInterval(intervalId);
-  }, []); // Empty dependency array to run only once on mount
+  }); // Empty dependency array to run only once on mount
 
   return (
     <div className="w-3/4 m-auto">
