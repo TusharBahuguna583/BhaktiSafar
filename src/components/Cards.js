@@ -1,5 +1,4 @@
 import React from "react";
-// import kedarnath from "../images/kedarnath.jpg";
 
 const Cards = ({ title, image }) => {
   return (
