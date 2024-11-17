@@ -15,7 +15,7 @@ const Cards = ({ title, image }) => {
           {title}
         </p>
       </div>
-      <div className="flex gap-14 justify-center items-center">
+      <div className="flex justify-between items-center">
         <p className="text-1xl ">Package price : ₹2500 - ₹3000</p>
         <button className="rounded-full w-36 h-10 bg-green-500 px-4 py-1 text-center cursor-pointer font-semibold text-gray-700">
           More Details
