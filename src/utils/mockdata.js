@@ -1,19 +1,21 @@
+import images from "./importAllImages";
+
 const cardInfo = [
   {
     title: "Khatu Shyam",
-    image: "",
+    image: images["khatushyam.jpg"],
   },
   {
     title: "Rani Sati Package",
-    image: "",
+    image: images["rishikesh.jpg"],
   },
   {
     title: "Rishikesh-Devprayag",
-    image: "",
+    image: images["rishikesh.jpg"],
   },
   {
     title: "Mathura-Vrindavan",
-    image: "",
+    image: "https://picsum.photos/500",
   },
 ];
 

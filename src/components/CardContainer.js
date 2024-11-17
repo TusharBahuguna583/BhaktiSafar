@@ -7,7 +7,9 @@ const CardContainer = () => {
       {
         cardInfo.map((card) => {
           return (
-            <Cards title = {card.title}/>
+            <Cards key={card.title} 
+                   title={card.title} 
+                   image={card.image} />
           );
         })
       }
