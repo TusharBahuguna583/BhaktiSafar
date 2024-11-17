@@ -36,10 +36,10 @@ const Contact = () => {
     // Send email
     emailjs
       .sendForm(
-        "service_gmauyjt",
-        "template_e2aj8yq",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID, // Access from .env
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Access from .env
         form.current,
-        "mA3RW6417Pomjht3w"
+        process.env.REACT_APP_EMAILJS_USER_ID // Access from .env
       )
       .then(
         (result) => {
