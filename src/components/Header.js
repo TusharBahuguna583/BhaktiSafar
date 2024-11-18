@@ -10,6 +10,8 @@ const Header = () => {
         <img src={logo} alt="Logo" className="w-12 sm:w-16 ml-3 rounded-lg" />
       </div>
 
+      <div className="sm:hidden block text-orange-700 text-sm">|| Bhakti Safar ||</div>
+
       {/* Contact Info */}
       <div className="flex flex-wrap items-center justify-center gap-6 mr-3 sm:mr-12 sm:gap-12">
         {/* Phone */}
