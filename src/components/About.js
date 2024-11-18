@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col items-center gap-4 mt-12 pt-2 px-4 text-gray-700"
+      className="flex flex-col items-center gap-4 sm:mt-12 mt-4 pt-2 px-4 text-gray-700"
     >
       {/* Heading */}
       <h1 className="font-normal text-2xl sm:text-3xl text-center">
