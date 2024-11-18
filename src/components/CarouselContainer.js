@@ -7,27 +7,27 @@ function CarouselContainer() {
   const data = [
     {
       name: "Slide 1",
-      image: images['radha-krisna.jpg'],
+      image: images["radha-krisna.jpg"],
     },
     {
       name: "Slide 2",
-      image: images['rishikesh3.jpg'],
+      image: images["rishikesh3.jpg"],
     },
     {
       name: "Slide 3",
-      image: images['kedarnath.jpg'],
+      image: images["kedarnath.jpg"],
     },
     {
       name: "Slide 4",
-      image: images['varanasi.jpg'],
+      image: images["varanasi.jpg"],
     },
     {
       name: "Slide 5",
-      image: images['rishikesh.jpg'],
+      image: images["rishikesh.jpg"],
     },
     {
       name: "Slide 6",
-      image: images['mathura-vrindavan.jpg'],
+      image: images["mathura-vrindavan.jpg"],
     },
   ];
 
@@ -43,27 +43,26 @@ function CarouselContainer() {
     );
   };
 
-  // Auto-scroll effect
   useEffect(() => {
-    const intervalId = setInterval(goToNextSlide, 3000); // Change slide every 3 seconds
+    const intervalId = setInterval(goToNextSlide, 3000);
 
-    // Clear interval on component unmount or when auto-scroll is disabled
     return () => clearInterval(intervalId);
-  }); // Empty dependency array to run only once on mount
+  });
 
   return (
-    <div className="w-[90%] m-auto">
-      <div className="mt-10 relative">
+    <div className="w-full sm:w-[90%] m-auto">
+      <div className="mt-5 sm:mt-10 relative">
         <img
           src={data[currentSlide].image}
           alt={data[currentSlide].name}
-          className="w-full h-[350px] object-cover"
+          className="w-full h-[200px] sm:h-[350px] object-cover"
         />
 
         {/* Left Arrow Button */}
         <button
           onClick={goToPrevSlide}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full text-lg sm:text-2xl"
+          aria-label="Previous Slide"
         >
           &#10094;
         </button>
@@ -71,22 +70,26 @@ function CarouselContainer() {
         {/* Right Arrow Button */}
         <button
           onClick={goToNextSlide}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full text-lg sm:text-2xl"
+          aria-label="Next Slide"
         >
           &#10095;
         </button>
 
         {/* Slide indicator dots */}
-        {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
           {data.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 bg-white rounded-full ${
-                currentSlide === index ? "p-2" : "bg-opacity-20"
-              }`}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2 h-2 sm:w-3 sm:h-3 bg-white rounded-full cursor-pointer ${
+                currentSlide === index
+                  ? "bg-opacity-100 scale-110"
+                  : "bg-opacity-50"
+              } transition-transform`}
             />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );

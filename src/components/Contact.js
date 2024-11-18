@@ -56,55 +56,55 @@ const Contact = () => {
   };
 
   return (
-    <div id="contactus" className="w-3/5 mx-auto mb-1 p-6">
-      <p className="w-full text-center text-7xl font-bold text-gray-600 ">
+    <div id="contactus" className="w-4/5 sm:w-4/5 lg:w-3/5 mx-auto mb-8 p-4 sm:p-6">
+      <p className="w-full text-center text-4xl sm:text-7xl font-bold text-gray-600 sm:mb-6">
         Get In Touch.
       </p>
       <form ref={form} onSubmit={sendEmail} className="space-y-4">
         <div>
-          <label htmlFor="user_name" className="block text-xl text-gray-700">
+          <label htmlFor="user_name" className="block text-lg sm:text-xl text-gray-700">
             Name
           </label>
           <input
             type="text"
             name="user_name"
             id="user_name"
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500 text-sm sm:text-base"
           />
         </div>
 
         <div>
-          <label htmlFor="user_email" className="block text-xl text-gray-700">
+          <label htmlFor="user_email" className="block text-lg sm:text-xl text-gray-700">
             Email
           </label>
           <input
             type="email"
             name="user_email"
             id="user_email"
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500 text-sm sm:text-base"
           />
         </div>
 
         <div>
-          <label htmlFor="user_mobile" className="block text-xl text-gray-700">
+          <label htmlFor="user_mobile" className="block text-lg sm:text-xl text-gray-700">
             Mobile Number
           </label>
           <input
             type="tel"
             name="user_mobile"
             id="user_mobile"
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500 text-sm sm:text-base"
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-xl text-gray-700">
+          <label htmlFor="message" className="block text-lg sm:text-xl text-gray-700">
             Message
           </label>
           <textarea
             name="message"
             id="message"
-            className="w-full min-h-32 p-2 border text-xs border-gray-300 rounded-md focus:outline-none focus:border-green-500 resize-none"
+            className="w-full min-h-32 p-2 border border-gray-300 rounded-md focus:outline-none focus:border-green-500 resize-none text-sm sm:text-base"
             rows="4"
           ></textarea>
         </div>
@@ -122,7 +122,7 @@ const Contact = () => {
         <div>
           <button
             type="submit"
-            className="w-full text-xl font-bold bg-orange-500 text-white p-2 rounded-md hover:bg-orange-600 focus:outline-none"
+            className="w-full text-lg sm:text-xl font-bold bg-orange-500 text-white p-2 rounded-md hover:bg-orange-600 focus:outline-none"
           >
             Send
           </button>
