@@ -10,13 +10,13 @@ const Cards = ({ title, image }) => {
           className="rounded-lg w-full h-52 object-fill mb-3"
         />
       </div>
-      <div className="flex justify-center mb-2">
+      <div className="flex justify-center">
         <p className="font-bold text-3xl text-center mb-3 text-gray-500">
           {title}
         </p>
       </div>
-      <div className="flex justify-between items-center">
-        <p className="text-1xl ">Package price : ₹2500 - ₹3000</p>
+      <div className="flex justify-between items-center mx-3">
+        <p className="text-xl text-gray-600">Package price : ₹2500 - ₹3000</p>
         <button className="rounded-full w-36 h-10 bg-green-500 px-4 py-1 text-center cursor-pointer font-semibold text-gray-700">
           More Details
         </button>

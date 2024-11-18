@@ -1,8 +1,20 @@
 import React from "react";
 import logo from "../images/logo.jpg";
+import { Link } from "react-router-dom";
 const Footer = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <div className="bg-[#475e7a] grid place-items-center p-5">
+    <div className="w-screen bg-[#475e7a] grid place-items-center p-5">
       <div className="flex items-center justify-center gap-2 mt-5">
         <img src={logo} alt="" className="w-20 rounded-lg m-2" />
         <p className="font-bold text-3xl text-white">Bhakti Safar</p>
@@ -15,16 +27,22 @@ const Footer = () => {
       </p>
       <ul className="flex gap-8 my-8 text-white">
         <li>
-          <a href="/">Home</a>
+          <Link to="/" onClick={() => scrollToTop()}>Home</Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link to="/" onClick={() => scrollToSection("about")}>
+            About
+          </Link>
         </li>
         <li>
-          <a href="#packages">Packages</a>
+          <Link to="/" onClick={() => scrollToSection("packages")}>
+            Packages
+          </Link>
         </li>
         <li>
-          <a href="#contactus">Contact</a>
+          <Link to="/" onClick={() => scrollToSection("contactus")}>
+            Contact
+          </Link>
         </li>
       </ul>
       <div className="flex items-center">
@@ -48,8 +66,8 @@ const Footer = () => {
           </span>
         </a>
       </div>
-      <div className="w-full bg-white h-[1px] mb-4 mt-3"></div>
-      <p className="text-xs text-white">Copyright© 2024 | Bhakti Safar</p>
+      <div className="w-full bg-white h-[1px] mb-2 mt-3"></div>
+      <p className="text-xs text-white ">Copyright© 2024 | Bhakti Safar</p>
     </div>
   );
 };

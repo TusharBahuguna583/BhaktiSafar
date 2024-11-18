@@ -57,12 +57,12 @@ const Contact = () => {
 
   return (
     <div id="contactus" className="w-3/5 mx-auto mb-1 p-6">
-      <p className="w-full text-center text-[400%] font-bold text-gray-600 ">
+      <p className="w-full text-center text-7xl font-bold text-gray-600 ">
         Get In Touch.
       </p>
       <form ref={form} onSubmit={sendEmail} className="space-y-4">
         <div>
-          <label htmlFor="user_name" className="block text-gray-700">
+          <label htmlFor="user_name" className="block text-xl text-gray-700">
             Name
           </label>
           <input
@@ -74,7 +74,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <label htmlFor="user_email" className="block text-gray-700">
+          <label htmlFor="user_email" className="block text-xl text-gray-700">
             Email
           </label>
           <input
@@ -86,7 +86,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <label htmlFor="user_mobile" className="block text-gray-700">
+          <label htmlFor="user_mobile" className="block text-xl text-gray-700">
             Mobile Number
           </label>
           <input
@@ -98,7 +98,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-gray-700">
+          <label htmlFor="message" className="block text-xl text-gray-700">
             Message
           </label>
           <textarea
@@ -122,7 +122,7 @@ const Contact = () => {
         <div>
           <button
             type="submit"
-            className="w-full bg-orange-500 text-white p-2 rounded-md hover:bg-orange-600 focus:outline-none"
+            className="w-full text-xl font-bold bg-orange-500 text-white p-2 rounded-md hover:bg-orange-600 focus:outline-none"
           >
             Send
           </button>

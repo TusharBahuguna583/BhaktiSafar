@@ -5,17 +5,20 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Contact from "./components/Contact";
 import CarouselContainer from "./components/CarouselContainer";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-orange-50 w-screen h-100% pt-4">
-      <Header />
-      <About />
-      <CarouselContainer />
-      <CardContainer />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="w-screen h-100% pt-4">
+        <Header />
+        <About />
+        <CarouselContainer />
+        <CardContainer />
+        <Contact />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

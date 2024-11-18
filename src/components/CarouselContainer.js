@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import images from "../utils/importAllImages";
 
 function CarouselContainer() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -6,19 +7,27 @@ function CarouselContainer() {
   const data = [
     {
       name: "Slide 1",
-      image: "https://picsum.photos/800/300",
+      image: images['radha-krisna.jpg'],
     },
     {
       name: "Slide 2",
-      image: "https://picsum.photos/800/200",
+      image: images['rishikesh3.jpg'],
     },
     {
       name: "Slide 3",
-      image: "https://picsum.photos/700/300",
+      image: images['kedarnath.jpg'],
     },
     {
       name: "Slide 4",
-      image: "https://picsum.photos/400/300",
+      image: images['varanasi.jpg'],
+    },
+    {
+      name: "Slide 5",
+      image: images['rishikesh.jpg'],
+    },
+    {
+      name: "Slide 6",
+      image: images['mathura-vrindavan.jpg'],
     },
   ];
 
@@ -43,12 +52,12 @@ function CarouselContainer() {
   }); // Empty dependency array to run only once on mount
 
   return (
-    <div className="w-3/4 m-auto">
+    <div className="w-[90%] m-auto">
       <div className="mt-10 relative">
         <img
           src={data[currentSlide].image}
           alt={data[currentSlide].name}
-          className="w-full h-[300px] object-cover"
+          className="w-full h-[350px] object-cover"
         />
 
         {/* Left Arrow Button */}

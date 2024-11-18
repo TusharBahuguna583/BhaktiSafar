@@ -11,7 +11,7 @@ const cardInfo = [
   },
   {
     title: "Rishikesh-Devprayag",
-    image: images["rishikesh.jpg"],
+    image: images["rishikesh2.jpg"],
   },
   {
     title: "Mathura-Vrindavan",
