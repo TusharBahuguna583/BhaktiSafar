@@ -4,13 +4,13 @@ import logo from "../images/logo.jpg";
 
 const Header = () => {
   return (
-    <div className="bg-white rounded-full flex flex-wrap items-center justify-between px-8 py-1 sm:px-12 sm:py-1 mx-4 sm:mx-20 lg:mx-44 shadow-lg">
+    <div className="bg-white rounded-full flex flex-wrap items-center justify-between px-6 py-1 sm:px-12 sm:py-1 mx-4 sm:mx-20 lg:mx-44 shadow-lg">
       {/* Logo */}
       <div className="flex items-center">
-        <img src={logo} alt="Logo" className="w-12 sm:w-16 ml-3 rounded-lg" />
+        <img src={logo} alt="Logo" className="w-12 sm:w-16 rounded-lg" />
       </div>
 
-      <div className="sm:hidden block text-orange-700 text-sm">|| Bhakti Safar ||</div>
+      <div className="text-orange-700 text-sm sm:text-2xl sm:font-bold sm:tracking-tighter sm:text-left sm:ml-2 sm:w-[600px]">|| Bhakti Safar ||</div>
 
       {/* Contact Info */}
       <div className="flex flex-wrap items-center justify-center gap-6 mr-3 sm:mr-12 sm:gap-12">

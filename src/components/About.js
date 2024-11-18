@@ -12,7 +12,7 @@ const About = () => {
       </h1>
 
       {/* Description */}
-      <p className="font-light text-xs sm:text-2xl text-center w-full sm:w-2/3">
+      <p className="hidden sm:block font-light text-xs sm:text-2xl text-center w-full sm:w-2/3">
         We are here to guide you to sacred temples and holy sites. Our journeys
         offer peace, connection, and inspiration—taking you beyond travel into
         an experience that nurtures the soul. Discover the divine with us.
