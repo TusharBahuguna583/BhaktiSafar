@@ -11,11 +11,11 @@ const Header = () => {
       </div>
 
       {/* Contact Info */}
-      <div className="flex flex-wrap items-center justify-center gap-6 sm:mr-12 sm:gap-12">
+      <div className="flex flex-wrap items-center justify-center gap-6 mr-12 sm:mr-12 sm:gap-12">
         {/* Phone */}
         <a href="tel:+918439377579" className="flex items-center">
-          <i className="fa-solid fa-phone text-xl sm:text-3xl" style={{ color: "#c2410c" }}></i>
-          <span className="text-orange-700 font-bold ml-2 text-xs sm:text-sm">
+          <i className="fa-solid fa-phone text-2xl sm:text-3xl" style={{ color: "#c2410c" }}></i>
+          <span className="hidden sm:block sm:text-orange-700 sm:font-bold sm:ml-2 sm:text-sm">
             +91-9289772369
           </span>
         </a>
@@ -27,8 +27,8 @@ const Header = () => {
           rel="noopener noreferrer"
           className="flex items-center"
         >
-          <i className="fa-solid fa-envelope text-xl sm:text-3xl" style={{ color: "#c2410c" }}></i>
-          <span className="text-orange-700 font-bold ml-2 text-xs sm:text-sm">
+          <i className="fa-solid fa-envelope text-2xl sm:text-3xl" style={{ color: "#c2410c" }}></i>
+          <span className="hidden sm:block text-orange-700 font-bold ml-2 text-xs sm:text-sm">
             seva@bhaktisafar.com
           </span>
         </a>
