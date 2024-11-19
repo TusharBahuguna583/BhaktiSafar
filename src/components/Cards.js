@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Cards = ({ title, image }) => {
   return (
     <div className="w-[80%] sm:w-[35%] h-auto p-3 m-4 bg-white rounded-xl shadow-lg">
@@ -19,9 +19,11 @@ const Cards = ({ title, image }) => {
         <p className="text-sm sm:text-xl text-gray-600 mb-3 sm:mb-0">
           Package price : ₹2500 - ₹3000
         </p>
-        <button className="rounded-full w-full sm:w-36 h-10 bg-green-500 px-4 py-1 text-center cursor-pointer font-semibold text-gray-700">
-          More Details
-        </button>
+        <Link to="/contact">
+          <button className="rounded-full w-36 h-10 bg-green-500 px-4 py-1 text-center cursor-pointer font-semibold text-gray-700">
+            More Details
+          </button>
+        </Link>
       </div>
     </div>
   );

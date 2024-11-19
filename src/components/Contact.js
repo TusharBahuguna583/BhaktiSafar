@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -6,6 +6,10 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+
+      useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -56,13 +60,19 @@ const Contact = () => {
   };
 
   return (
-    <div id="contactus" className="w-4/5 sm:w-4/5 lg:w-3/5 mx-auto mb-8 p-4 sm:p-6">
+    <div
+      id="contactus"
+      className="w-4/5 sm:w-4/5 lg:w-3/5 mx-auto mb-8 p-4 sm:p-6"
+    >
       <p className="w-full text-center text-4xl sm:text-7xl font-bold text-gray-600 sm:mb-6">
         Get In Touch.
       </p>
       <form ref={form} onSubmit={sendEmail} className="space-y-4">
         <div>
-          <label htmlFor="user_name" className="block text-lg sm:text-xl text-gray-700">
+          <label
+            htmlFor="user_name"
+            className="block text-lg sm:text-xl text-gray-700"
+          >
             Name
           </label>
           <input
@@ -74,7 +84,10 @@ const Contact = () => {
         </div>
 
         <div>
-          <label htmlFor="user_email" className="block text-lg sm:text-xl text-gray-700">
+          <label
+            htmlFor="user_email"
+            className="block text-lg sm:text-xl text-gray-700"
+          >
             Email
           </label>
           <input
@@ -86,7 +99,10 @@ const Contact = () => {
         </div>
 
         <div>
-          <label htmlFor="user_mobile" className="block text-lg sm:text-xl text-gray-700">
+          <label
+            htmlFor="user_mobile"
+            className="block text-lg sm:text-xl text-gray-700"
+          >
             Mobile Number
           </label>
           <input
@@ -98,7 +114,10 @@ const Contact = () => {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-lg sm:text-xl text-gray-700">
+          <label
+            htmlFor="message"
+            className="block text-lg sm:text-xl text-gray-700"
+          >
             Message
           </label>
           <textarea

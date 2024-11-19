@@ -18,7 +18,11 @@ const Footer = () => {
     <div className="w-full bg-[#475e7a] p-4 sm:p-5 flex flex-col items-center">
       {/* Logo and Title */}
       <div className="flex flex-col sm:flex-row items-center gap-2 mt-3 sm:mt-5">
-        <img src={logo} alt="Bhakti Safar Logo" className="w-14 sm:w-20 rounded-lg" />
+        <img
+          src={logo}
+          alt="Bhakti Safar Logo"
+          className="w-14 sm:w-20 rounded-lg"
+        />
         <p className="font-bold text-lg sm:text-3xl text-white text-center">
           Bhakti Safar
         </p>
@@ -52,16 +56,17 @@ const Footer = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" onClick={() => scrollToSection("contactus")}>
-            Contact
-          </Link>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
 
       {/* Contact Information */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-14 mt-3 sm:mt-5">
         <a href="tel:+918439377579" className="flex items-center">
-          <i className="fa-solid fa-phone text-lg sm:fa-2xl" style={{ color: "#f97316" }}></i>
+          <i
+            className="fa-solid fa-phone text-lg sm:fa-2xl"
+            style={{ color: "#f97316" }}
+          ></i>
           <span className="text-orange-500 font-bold ml-2 text-xs sm:text-base">
             +91-9289772369
           </span>
@@ -72,7 +77,10 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="flex items-center"
         >
-          <i className="fa-solid fa-envelope text-lg sm:fa-2xl" style={{ color: "#f97316" }}></i>
+          <i
+            className="fa-solid fa-envelope text-lg sm:fa-2xl"
+            style={{ color: "#f97316" }}
+          ></i>
           <span className="text-orange-500 font-bold ml-2 text-xs sm:text-base">
             seva@bhaktisafar.com
           </span>
