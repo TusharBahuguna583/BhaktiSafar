@@ -15,14 +15,15 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full bg-[#475e7a] p-4 sm:p-5 flex flex-col items-center">
+    <div className="w-full bg-[#475e7a] p-1 sm:p-1 flex flex-col items-center">
       {/* Logo and Title */}
-      <div className="flex flex-col sm:flex-row items-center gap-2 mt-3 sm:mt-5">
+      <div className="flex flex-col sm:flex-row items-center gap-2 mt-2 sm:mt-3">
         <img
           src={logo}
           alt="Bhakti Safar Logo"
-          className="w-14 sm:w-20 rounded-lg"
+          className="w-14 sm:w-20 rounded-lg shadow-lg ring-4 ring-orange-400 halo-effect"
         />
+
         <p className="font-bold text-lg sm:text-3xl text-white text-center">
           Bhakti Safar
         </p>
@@ -39,7 +40,7 @@ const Footer = () => {
       </p>
 
       {/* Navigation Links */}
-      <ul className="flex flex-wrap gap-2 sm:gap-8 mt-4 sm:mt-8 text-white text-xs sm:text-base justify-center">
+      <ul className="flex flex-wrap gap-2 sm:gap-8 mt-3 sm:mt-3 text-white text-xs sm:text-base justify-center">
         <li>
           <Link to="/" onClick={() => scrollToTop()}>
             Home
