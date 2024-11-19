@@ -26,7 +26,7 @@ const Header = () => {
       {/* Contact Info */}
       <div className="flex items-center justify-end w-1/3 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
         {/* Phone */}
-        <a href="tel:+918439377579" className="flex items-center">
+        <a href="tel:+919289772369" className="flex items-center">
           <i
             className="fa-solid fa-phone text-lg sm:text-xl md:text-2xl"
             style={{ color: "#c2410c" }}

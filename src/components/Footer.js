@@ -63,7 +63,7 @@ const Footer = () => {
 
       {/* Contact Information */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-14 mt-3 sm:mt-5">
-        <a href="tel:+918439377579" className="flex items-center">
+        <a href="tel:+919289772369" className="flex items-center">
           <i
             className="fa-solid fa-phone text-lg sm:fa-2xl"
             style={{ color: "#f97316" }}
