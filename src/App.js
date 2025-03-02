@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import CarouselContainer from "./components/CarouselContainer";
 import PageNotFound from "./components/PageNotFound";
 import ParticlesBackground from "./components/ParticlesBackground"; // Adjust the import path as needed
+import Gallery from "./components/Gallery";
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
                   <About />
                   <CarouselContainer />
                   <CardContainer />
+                  <Gallery/>
                 </>
               }
             />
