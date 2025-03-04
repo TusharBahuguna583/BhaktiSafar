@@ -10,7 +10,7 @@ const CardContainer = () => {
     >
       {/* Horizontal Lines */}
       <div className="w-4/5 sm:w-3/5 sm:border-2 border rounded-full border-gray-400 "></div>
-      <div className="w-4/5 sm:w-3/5 sm:border-2 border rounded-full border-gray-400 mt-[2px] sm:mt-[3px]"></div>
+      <div className="w-4/5 sm:w-3/5 sm:border-2 border rounded-full border-gray-400 mt-[2px] sm:mt-[3px]"></div>      
 
       {/* Heading */}
       <div className="w-full text-center text-4xl sm:text-7xl mt-6 sm:mt-8 font-bold text-gray-600">
