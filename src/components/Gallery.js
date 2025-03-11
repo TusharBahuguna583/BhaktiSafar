@@ -13,42 +13,48 @@ const ImageGallery = () => {
 
   const scrollLeft = () => {
     if (carouselRef.current) {
-      const scrollAmount = window.innerWidth < 640 ? carouselRef.current.clientWidth / 1 : carouselRef.current.clientWidth / 3;
+      const scrollAmount =
+        window.innerWidth < 640
+          ? carouselRef.current.clientWidth / 1
+          : carouselRef.current.clientWidth / 3;
       carouselRef.current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
     }
   };
 
   const scrollRight = () => {
     if (carouselRef.current) {
-      const scrollAmount = window.innerWidth < 640 ? carouselRef.current.clientWidth / 1 : carouselRef.current.clientWidth / 3;
+      const scrollAmount =
+        window.innerWidth < 640
+          ? carouselRef.current.clientWidth / 1
+          : carouselRef.current.clientWidth / 3;
       carouselRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
 
   return (
     <div className="h-screen flex flex-col justify-center items-center p-5 relative">
-      <h1 className="text-center text-4xl sm:text-7xl font-bold text-gray-600 mb-5">
+      <div className="w-4/5 sm:w-3/5 sm:border-2 border rounded-full border-gray-400 "></div>
+      <div className="w-4/5 sm:w-3/5 sm:border-2 border rounded-full border-gray-400 mt-[2px] sm:mt-[3px]"></div>
+      <h1 className="text-center text-4xl sm:text-7xl font-bold text-gray-600 mb-5 mt-5">
         Memorable Yatra
       </h1>
-      
+
       <div className="relative w-full px-10">
-        <button 
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg" 
-          onClick={scrollLeft}>
+        <button
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg"
+          onClick={scrollLeft}
+        >
           ◀
         </button>
-        <div 
-          ref={carouselRef} 
-          className="w-full overflow-hidden flex gap-4"
-        >
+        <div ref={carouselRef} className="w-full overflow-hidden flex gap-4">
           {data.map((image, index) => (
             <figure
               key={index}
               className="relative rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 cursor-pointer flex-shrink-0"
-              style={{ 
-                width: "100%", 
+              style={{
+                width: "100%",
                 maxWidth: window.innerWidth < 640 ? "100%" : "calc(100% / 3)",
-                scrollSnapAlign: "center" 
+                scrollSnapAlign: "center",
               }}
               onClick={() => setSelectedImage(image.src)}
             >
@@ -60,9 +66,10 @@ const ImageGallery = () => {
             </figure>
           ))}
         </div>
-        <button 
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg" 
-          onClick={scrollRight}>
+        <button
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg"
+          onClick={scrollRight}
+        >
           ▶
         </button>
       </div>
@@ -82,7 +89,11 @@ const ImageGallery = () => {
             >
               &times;
             </button>
-            <img src={selectedImage} alt="Selected" className="w-full h-auto rounded-md" />
+            <img
+              src={selectedImage}
+              alt="Selected"
+              className="w-full h-auto rounded-md"
+            />
           </div>
         </div>
       )}
