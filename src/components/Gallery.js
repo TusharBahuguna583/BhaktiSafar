@@ -32,7 +32,7 @@ const ImageGallery = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center p-5 relative">
+    <div className="h-1/3 flex flex-col justify-center items-center p-5 relative mb-2">
       <div className="w-4/5 sm:w-3/5 sm:border-2 border rounded-full border-gray-400 "></div>
       <div className="w-4/5 sm:w-3/5 sm:border-2 border rounded-full border-gray-400 mt-[2px] sm:mt-[3px]"></div>
       <h1 className="text-center text-4xl sm:text-7xl font-bold text-gray-600 mb-5 mt-5">
@@ -46,7 +46,7 @@ const ImageGallery = () => {
         >
           ◀
         </button>
-        <div ref={carouselRef} className="w-full overflow-hidden flex gap-4">
+        <div ref={carouselRef} className="w-[98%] p-9 overflow-hidden flex gap-4">
           {data.map((image, index) => (
             <figure
               key={index}

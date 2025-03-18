@@ -10,6 +10,7 @@ import CarouselContainer from "./components/CarouselContainer";
 import PageNotFound from "./components/PageNotFound";
 import ParticlesBackground from "./components/ParticlesBackground"; // Adjust the import path as needed
 import Gallery from "./components/Gallery";
+import ReviewSection from "./components/ReviewSection";
 
 function App() {
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
                   <CarouselContainer />
                   <CardContainer />
                   <Gallery/>
+                  <ReviewSection/>
                 </>
               }
             />
